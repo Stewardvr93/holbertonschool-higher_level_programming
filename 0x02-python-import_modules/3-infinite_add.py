@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-import sys
 if __name__ == "__main__":
-    total = 0
-    for iterador in range(1, len(sys.argv)):
-        total = total + int(sys.argv[iterador])
-    print("{}".format(total))
+    import sys
+    add = 0
+    number = len(sys.argv)
+    for solution in range(1, number):
+        add += int(sys.argv[solution])
+    print(add)

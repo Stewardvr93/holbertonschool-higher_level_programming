@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
-    from hidden_4 import *
-    arreglo = dir()
-    for iterador in range(0, len(arreglo)):
-        if arreglo[iterador][0:2] != "__":
-            print("{}".format(arreglo[iterador]))
+if __name__ == '__main__':
+    import hidden_4
+
+    for i in dir(hidden_4):
+        if i[:2] != "__":
+            print(i)
