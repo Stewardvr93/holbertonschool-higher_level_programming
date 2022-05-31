@@ -1,0 +1,103 @@
+::::::::::::
+Funcion
+::::::::::::
+Archivo txt donde se verifican todos los errores posibles
+que puden tener la funcion add_integer() que suma de dos variables.
+
+Importacion del modulo:
+::::::::::::::::::::::::::::::::::::
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+:::::::::::::::::::::::::::::::::::: 
+
+Pruebas:
+:::::::::::::
+
+1 - Se supone que debe retornar la suma de dos enteros:
+
+>>> add_integer(12, 12)
+24
+
+2 - Se supone que debe retornar la suma de a = 4 mas b = 98
+
+>>> add_integer(4)
+102
+
+3 - Se supone que de retornar la suma de a = -4 mas b = 10
+
+>>> add_integer(-4, 10)
+6
+
+4 -  Se supone que debe retornar la suma de a = float mas b = int
+
+>>> add_integer(2.5)
+100
+
+5 - Se supone que debe  retornar la suma de a = -floay mas b = int
+
+>>> add_integer(-2.5)
+96
+
+6 -  Se supone que debe retornar la suma de a = 3.14 mas b = 100
+
+>>> add_integer(3.14, 100)
+103
+
+7 - Se supone que debe retornar la suma de a = (10 + 10) mas b = 10
+>>> add_integer((10 + 10), 10)
+30
+
+8 - Se supone que de retornar la suma de a = 10 mas b = (10 + 10)
+
+>>> add_integer(10, (10 + 10))
+30
+
+9 - Se supone que deberia generar una excepcion TypeError por b = "Pepe"
+
+>>> add_integer(4, "Pepe")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+10 - Se supone que deberia generar una excepcion TypeError por a = "Pepe"
+
+>>> add_integer("Pepe", 4)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+11 - Se supone que deberia generar una excepcion TypeError por Funcion vacia
+
+>>> add_integer()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+12 - Se supone que deberia generar una excepcion para un numero infinito
+
+>>> add_integer(float('inf'), 89)
+Traceback (most recent call last):
+...
+OverflowError: cannot convert float infinity to integer
+
+13 - Se supone que deberia generar una excepcion ValueError
+
+>>> add_integer(float('NaN'), -2)
+Traceback (most recent call last):
+...
+ValueError: cannot convert float NaN to integer
+
+14 - Se supone que deberia generar una excepcion por mas de dos argumentos que recibe la funcion.
+
+>>> add_integer(100, 2, 42)
+Traceback (most recent call last):
+...
+TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+15 - Se supone que deberia generar una excepcion TypeError para una funcion None:
+
+>>> add_integer(None)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
