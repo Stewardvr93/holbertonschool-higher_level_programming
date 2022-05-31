@@ -1,0 +1,146 @@
+::::::::::::
+Funcion
+::::::::::::
+Archivo txt donde se verifican todos los errores posibles
+que puede tener  la función text_indentation() que imprime
+un texto con dos lineas despues de ciertos caracteres.
+
+Importacion del modulo:
+::::::::::::::::::::::::::::::::::::
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+:::::::::::::::::::::::::::::::::::: 
+
+Pruebas:
+:::::::::::::
+
+1 - Se supone que debe retornar la impresion de la cadena
+
+>>> text_indentation("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere?")
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<BLANKLINE>
+Quonam modo?
+<BLANKLINE>
+Utrum igitur tibi litteram videor an totas paginas commovere?
+<BLANKLINE>
+
+2 - Se supone que debe retornar la impresion de la cadena
+
+>>> text_indentation("Lorem?")
+Lorem?
+<BLANKLINE>
+
+3 - Se supone que debe retornar la impresion de la cadena
+
+>>> text_indentation("Lorem")
+Lorem
+
+4 - Se supone que debe retornar la impresion de la cadena
+
+>>> text_indentation("?Lorem")
+?
+<BLANKLINE>
+Lorem
+
+5 - Se supone que debe retornar la impresion de la cadena
+
+>>> text_indentation("?")
+?
+<BLANKLINE>
+
+6 - Se supone que debe retornar la impresion de la cadena vacia
+
+>>> text_indentation("")
+
+>>> text_indentation(" ")
+
+7 - Se supone que debe generar una excepcion de tipo TypeError
+
+>>> text_indentation(None)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+8 - Se supone que debe generar una excepcion de tipo TypeError por el dato int
+
+>>> text_indentation(14)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+9 - Se supone que debe generar una excepcion de tipo TypeError por el negativo entero
+
+>>> text_indentation(-14)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+10 - Se supone que debe generar una excepcion de tipo TypeError por no mandar ningun argumento.
+
+>>> text_indentation()
+Traceback (most recent call last):
+...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+11 - Se supone que debe generar una excepcion de tipo TypeError por mandar mas de una cadena
+
+>>> text_indentation("Lorem?", "ipsum:")
+Traceback (most recent call last):
+...
+TypeError: text_indentation() takes 1 positional argument but 2 were given
+
+12 - Se supone que debe generar una excepcion de tipo TypeError por mandar mas de un argumento
+
+>>> text_indentation(12, 12)
+Traceback (most recent call last):
+...
+TypeError: text_indentation() takes 1 positional argument but 2 were given
+
+13 - Se supone que debe generar una excepcion de tipo TypeError por el dato float
+
+>>> text_indentation(12.12)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+14 - Se supone que debe generar una excepcion de tipo TypeError por el dato float negativo
+
+>>> text_indentation(-12.12)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+15 - Se supone que debe retornar la impresion de los tres caracteres especiales.
+
+text_indentation("? . :")
+?
+<BLANKLINE>
+.
+<BLANKLINE>
+:
+<BLANKLINE>
+
+16 - Se supone que debe retornar la cadena.
+
+>>> text_indentation(str(2022))
+2022
+
+17 - Se supone que debe retornar la cadena, el salto de linea,
+
+>>> text_indentation("\n")
+<BLANKLINE>
+
+18 - Se supone que debe generar una excepcion de tipo TypeError por el dato boolenao
+
+>>> text_indentation(True)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+19 - Se supone que debe generar una excepcion de tipo TypeError
+
+>>> text_indentation(["True", "False"])
+Traceback (most recent call last):
+...
+TypeError: text must be a string
