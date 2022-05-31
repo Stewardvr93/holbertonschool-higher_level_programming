@@ -66,16 +66,5 @@
 
 ------------
 
-# Author
-
-
-## Juan Sebastian Avendaño Gonzalez:
-- Git: https://github.com/AvendanoisPepe
-- Twitter: https://twitter.com/Sebastian_Aven
-- Linkedin: https://www.linkedin.com/in/juan-sebastian-avenda%C3%B1o-gonz%C3%A1lez-8b1185200/
-
-
-------------
-
 
 ![](https://scontent.fbog4-1.fna.fbcdn.net/v/t39.30808-6/271153206_3074657909465585_6907762404450913633_n.jpg?_nc_cat=105&_nc_rgb565=1&ccb=1-5&_nc_sid=730e14&_nc_ohc=Wm9imN7mxqAAX_DgRTy&_nc_ht=scontent.fbog4-1.fna&oh=00_AT9bMuywrpnZKR3yaTAPu-lqwQ0uJpFTGIYQPM2wabvWlg&oe=61EB1180)
