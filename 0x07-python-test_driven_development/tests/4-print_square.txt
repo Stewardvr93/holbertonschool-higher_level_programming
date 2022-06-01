@@ -1,0 +1,144 @@
+::::::::::::
+Funcion
+::::::::::::
+Archivo txt donde se verifican todos los errores posibles
+que puede tener  la función print_square() que imprime
+un cuadrado con el caracter #
+
+Importacion del modulo:
+::::::::::::::::::::::::::::::::::::
+
+>>> print_square = __import__('4-print_square').print_square
+
+:::::::::::::::::::::::::::::::::::: 
+
+Pruebas:
+:::::::::::::
+
+1 - Se supone que debe generar una excepcion tipo TypeError por el dato en cadena.
+
+>>> print_square("Pepe")
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+2 - Se supone que debe generar una excepcion tipo TypeError por el dato float.
+
+>>> print_square(9.9)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+3 - Se supone que debe generar una excepcion tipo ValueError por el dato menor a 0
+
+>>> print_square(-56)
+Traceback (most recent call last):
+...
+ValueError: size must be >= 0
+
+4 - Se supone que debe generar una excepcion tipo TypeError por el dato float
+
+>>> print_square(-56.89)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+5 - Se supone que debe generar una excepcion tipo TypeError por mandarla sin argumentos
+
+>>> print_square()
+Traceback (most recent call last):
+...
+TypeError: print_square() missing 1 required positional argument: 'size'
+
+6 - Se supone que debe generar una excepcion tipo TypeError por mandarla con mas de un argumento
+
+>>> print_square(3, 14)
+Traceback (most recent call last):
+...
+TypeError: print_square() takes 1 positional argument but 2 were given
+
+7 - Se supone que debe generar una excepcion tipo TypeError
+
+>>> print_square(None)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+8 - Se supone que debe generar una excepcuon tipo TypeError
+
+>>> print_square([1, 2, 3, 4, 5])
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+9 - Se supone que debe generar una excepcion tipo ValueError
+
+>>> print_square(int('NaN'))
+Traceback (most recent call last):
+...
+ValueError: invalid literal for int() with base 10: 'NaN'
+
+10 - Se supone que deberia returnar un cuadrado de 4 x 4 con el caracter #
+
+>>> print_square(int(1) + int(3))
+####
+####
+####
+####
+
+11 - Se supone que deberia generar una excepcion tipo ValueError
+
+>>> print_square(int("c") + int("d"))
+Traceback (most recent call last):
+...
+ValueError: invalid literal for int() with base 10: 'c'
+
+12 -Se supone que deberia returnar un cuadrado de 4 x 4 con el caracter #
+
+>>> print_square(int("1") + int("3"))
+####
+####
+####
+####
+
+13 - Se supone que debe generar una excepcion tipo NameError
+
+>>> print_square(int(c) + int(d))
+Traceback (most recent call last):
+...
+NameError: name 'c' is not defined
+
+14 -Se supone que deberia returnar un cuadrado de 18 x 18 con el caracter #
+
+>>> print_square(3 * 6)
+##################
+##################
+##################
+##################
+##################
+##################
+##################
+##################
+##################
+##################
+##################
+##################
+##################
+##################
+##################
+##################
+##################
+##################
+
+15 -Se supone que deberia returnar un cuadrado de 9 x 9 con el caracter #
+
+>>> print_square(3+ 6)
+#########
+#########
+#########
+#########
+#########
+#########
+#########
+#########
+#########
