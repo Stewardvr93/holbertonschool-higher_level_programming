@@ -46,7 +46,7 @@ class TestRectangle(unittest.TestCase):
     def test_raise_height_no_int(self):
         """Check Value error in height no int
             """
-        self.assertRaises(TypeError, Rectangle, 2, "pepe")
+        self.assertRaises(TypeError, Rectangle, 2, "stvr")
 
     def test_raise_x_negative(self):
         """Check Value error in x
@@ -61,12 +61,12 @@ class TestRectangle(unittest.TestCase):
     def test_raise_y_no_int(self):
         """Check Value error in y no int
             """
-        self.assertRaises(TypeError, Rectangle, 4, 8, 8, "pepe")
+        self.assertRaises(TypeError, Rectangle, 4, 8, 8, "stvr")
 
     def test_raise_x_no_int(self):
         """Check Value error in x no int
             """
-        self.assertRaises(TypeError, Rectangle, 2, 2, "pepe")
+        self.assertRaises(TypeError, Rectangle, 2, 2, "stvr")
 
     """=========================================================="""
 
@@ -217,7 +217,7 @@ class TestRectangle(unittest.TestCase):
         """call the methode without parametres"""
         self.assertRaises(TypeError, r5.to_json_string)
         self.assertEqual(
-            r5.to_json_string(("pepe", "avendano")), '["pepe", "avendano"]'
+            r5.to_json_string(("stvr", "valdez")), '["stvr", "valdez"]'
         )
 
 
