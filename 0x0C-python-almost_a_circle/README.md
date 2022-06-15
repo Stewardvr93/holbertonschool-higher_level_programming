@@ -48,7 +48,7 @@
 | Task 3 | Validate attributes | 
 | Task 4 | Area first |
 | Task 5 | Display #0 |
-| Task 6 | __str__ |
+| Task 6 | __ str __ |
 | Task 7 | Display #1 |
 | Task 8 | Update #0 |
 | Task 9 | Update #1 |
