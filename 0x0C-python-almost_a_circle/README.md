@@ -1,4 +1,5 @@
 # 0x0C. Python - Almost a circle
+------------
 
 ## General
 
@@ -8,6 +9,8 @@
 -What is *args and how to use it
 -What is **kwargs and how to use it
 -How to handle named arguments in a function
+
+------------
 
 # Requirements
 
@@ -25,6 +28,8 @@
 -All your classes should be documented: python3 -c 'print(__import__("my_module").MyClass.__doc__)'
 -All your functions (inside and outside a class) should be documented: python3 -c 'print(__import__("my_module").my_function.__doc__)' and python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'
 -A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
+
+------------
 
 # Python Unit Tests
 
