@@ -23,7 +23,7 @@ class testSquare(unittest.TestCase):
         self.assertRaises(TypeError, Square, "-9", 8)
 
     def test_raise_height_no_int(self):
-        self.assertRaises(TypeError, Square, 2, "pepe")
+        self.assertRaises(TypeError, Square, 2, "stvr")
 
     def test_raise_x_negative(self):
         self.assertRaises(ValueError, Square, 8, 2, -2)
@@ -32,10 +32,10 @@ class testSquare(unittest.TestCase):
         self.assertRaises(ValueError, Square, 2, 8, -1)
 
     def test_raise_y_no_int(self):
-        self.assertRaises(TypeError, Square, 4, 8, "pepe")
+        self.assertRaises(TypeError, Square, 4, 8, "stvr")
 
     def test_raise_x_no_int(self):
-        self.assertRaises(TypeError, Square, 2, 2, "pepe")
+        self.assertRaises(TypeError, Square, 2, 2, "stvr")
 
     def test_sinexepcion(self):
         """Test Square class: check for missing args."""
@@ -200,5 +200,5 @@ class testSquare(unittest.TestCase):
         """call the methode without parametres"""
         self.assertRaises(TypeError, r5.to_json_string)
         self.assertEqual(
-            r5.to_json_string(("pepe", "avendano")), '["pepe", "avendano"]'
+            r5.to_json_string(("stvr", "valdez")), '["stvr", "valdez"]'
         )
