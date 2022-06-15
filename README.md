@@ -1,4 +1,3 @@
-![](https://blog.educacionit.com/wp-content/uploads/2018/09/2-01-750x410.jpg)
 
 # 0x07. Python - Test-driven development
 
