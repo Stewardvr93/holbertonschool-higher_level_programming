@@ -1,2 +1,2 @@
--- muestra todas las bases de datos del servidor
-SOW DATABASES;
+-- muestra todas las bases de datos de este servidor
+SHOW DATABASES;
