@@ -1,0 +1,2 @@
+-- lo mismo solo que con inner join
+SELECT genero.name, SUM(rat.rate) AS rating FROM tv_genres AS genero INNER JOIN tv_show_genres AS uni ON uni.genre_id = genero.id INNER JOIN tv_show_ratings AS rat ON rat.show_id = uni.show_id GROUP BY genero.name ORDER BY rating DESC;

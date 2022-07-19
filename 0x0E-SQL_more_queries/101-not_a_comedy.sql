@@ -1,0 +1,2 @@
+-- Lo miismo que el punto anterior.
+SELECT tv.title FROM tv_shows AS tv WHERE tv.title NOT IN (SELECT tvv.title FROM tv_shows AS tvv LEFT JOIN tv_show_genres AS uni ON tvv.id = uni.show_id LEFT JOIN tv_genres AS genero ON uni.genre_id  = genero.id WHERE genero.name = 'Comedy') GROUP BY title ORDER BY title ASC;
