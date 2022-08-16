@@ -1,28 +1,20 @@
-# 0x1E. C - Search Algorithms
+# 0x12. JavaScript - Warm up
 
-Resources
-Read or watch:
+## Resources
 
-[Search algorithm](https://en.wikipedia.org/wiki/Search_algorithm)
+**Read or watch**
 
-[Space complexity (1)](https://www.geeksforgeeks.org/g-fact-86/)
+- [Writing JavaScript Code](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+- [Variables](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables)
+- [Data Types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+- [Operators](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+- [Operator Precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+- [Controlling Program Flow](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
+- [Functions](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)
+- [Objects and Arrays](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
+- [Intrinsic Objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
+- [Module patterns](http://darrenderidder.github.io/talks/ModulePatterns/#/)
+- [var, let and const](https://www.youtube.com/watch?v=sjyJBL5fkp8)
+- [JavaScript Tutorial](https://www.youtube.com/watch?v=vZBCTc9zHtI)
+- [Modern JS](https://github.com/mbeaudru/modern-js-cheatsheet)
 
-## Learning Objectives
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
-
-## General
-- What is a search algorithm
-- What is a linear search
-- What is a binary search
-- What is the best search algorithm to use depending on your needs
-
-## Table of contents
-Files | Description
------ | -----------
-[0-linear.c](./0-linear.c) | C function that searches for a value in an array of integers using the Linear search algorithm
-[1-binary.c](./1-binary.c) | C function that searches for a value in a sorted array of integers using the Binary search algorithm
-[2-O](./2-O) | What is the time complexity (worst case) of a linear search in an array of size n?
-[3-O](./3-O) | What is the space complexity (worst case) of an iterative linear search algorithm in an array of size n?
-[4-O](./4-O) | What is the time complexity (worst case) of a binary search in an array of size n?
-[5-O](./5-O) | What is the space complexity (worst case) of a binary search in an array of size n?
-[6-O](./6-O) | What is the space complexity of this function / algorithm?
