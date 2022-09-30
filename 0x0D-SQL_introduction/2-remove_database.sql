@@ -1,2 +1,2 @@
--- Elimina la base de datos si existe, si no, no hace anda
-DROP DATABASE IF EXISTS hbtn_0c_0;
+-- DELETES THE DATEBASE IN YOUR MYSQL SERVER
+DROP DATABASE IF EXISTS `hbtn_0c_0`;
