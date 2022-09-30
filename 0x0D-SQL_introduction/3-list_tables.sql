@@ -1,2 +1,2 @@
--- Muestra todas las tablas de x base de datos.
+-- LISTS ALL THE TABLES OF DATEBASE IN YOUR MYSQL SERVER
 SHOW TABLES;
