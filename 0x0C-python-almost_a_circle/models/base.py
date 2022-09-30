@@ -1,17 +1,17 @@
 #!/usr/bin/python3
-"""Clase base que servira para todo el proyecto"""
+"""Base class that will serve for the task"""
 import json
 import csv
 
 
 class Base():
-    """La idea es evitar duplicidad de
-    datos en las clases futuras"""
+    """The idea is to avoid duplication of
+     data in future classes"""
 
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """Inicializacion de atributos del objeto base"""
+        """Base object attribute initialization"""
         if id is not None:
             self.id = id
         else:
@@ -20,16 +20,16 @@ class Base():
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        """Obtenemos la forma de un Objeto JSON
-        en forma de cadena"""
+        """We get the form of a JSON Object
+         in the form of a chain"""
         if not list_dictionaries or list_dictionaries == [None]:
             return "[]"
         return json.dumps(list_dictionaries)
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """Crea un archivo .json con una cadena de
-        bibliotecas"""
+        """Create a .json file with a string of
+         librarys"""
         lista = []
         if list_objs is not None and len(list_objs) > 0:
             for objeto in list_objs:
