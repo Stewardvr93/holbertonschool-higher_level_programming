@@ -1,2 +1,4 @@
--- Actualiza el valor de score del registro con nombre bob
-UPDATE second_table SET score = 10 WHERE name = 'Bob';
+-- update the score of bob to 10
+UPDATE `second_table`
+SET `score` = 10
+WHERE `name` = 'Bob';

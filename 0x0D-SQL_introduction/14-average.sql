@@ -1,2 +1,3 @@
--- Con avg devuelve el promedio de los valores en una columna especificada
-SELECT AVG(score) AS average FROM second_table;
+-- computes the score avarage of all records in the table
+SELECT AVG(`score`) AS 'average'
+FROM `second_table`;

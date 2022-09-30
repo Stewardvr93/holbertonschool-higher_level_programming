@@ -1,2 +1,2 @@
--- Muestra todos los registros de esta tabla.
-SELECT * FROM first_table;
+-- LISTS ALL ROWS OF THE TABLE FROM THE DATEBASE
+SELECT * FROM `first_table`;
